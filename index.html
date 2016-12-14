@@ -1,0 +1,148 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Willie Chang</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <link rel="stylesheet" href="css/vex.css" />
+        <link rel="stylesheet" href="css/vex-theme-plain.css" />
+
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+
+        <div id="outer">
+          <div id="inner">
+            <a href="portfolio.pdf" target="_blank">
+              <img src="img/button.png" id="button" title="Download PDF" />
+            </a>
+            <div id="name">
+              Willie Chang
+            </div>
+          </div>
+        </div>
+
+        <div id="main">
+          <div class="section">
+            <div class="heading">
+              <img src="img/star.png" class="icon" />
+              <span class="title">
+                Featured projects
+              </span>
+            </div>
+            <div class="row">
+              <img src="img/phenotate.png" class="big" id="phenotate" /><img src="img/aus.png" class="big" id="aus" />
+            </div>
+          </div>
+
+          <div class="section">
+            <div class="heading">
+              <img src="img/yl.png" class="icon" />
+              <span class="title">
+                Yearbook Labs
+              </span>
+              <a href="http://yearbooklabs.com" target="_blank">
+                <img src="img/export.png" id="export" />
+              </a>
+            </div>
+            <div class="row">
+              <img src="img/gradforms.png" class="small" id="gradforms" /><img src="img/messenger.png" class="small" id="messenger" /><img src="img/meteowear.png" class="small" id="meteowear" />
+            </div>
+            <div class="row">
+              <img src="img/availability.png" class="small" id="availability" /><img src="img/meat.png" class="small" id="meat" /><img src="img/dropcalc.png" class="small" id="dropcalc" />
+            </div>
+          </div>
+
+          <div class="section">
+            <div class="heading">
+              <img src="img/folder.png" class="icon" />
+              <span class="title">
+                Other projects
+              </span>
+            </div>
+            <div class="row">
+              <img src="img/mus.png" class="small" id="mus" /><img src="img/fyc.png" class="small" id="fyc" /><img src="img/mrclancy.png" class="small" id="mrclancy" />
+            </div>
+          </div>
+
+          <div id="footer">
+            © williehwc (at) gmail (dot) com
+          </div>
+        </div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+        <script src="js/vex.combined.min.js"></script>
+        <script>
+          vex.defaultOptions.className = 'vex-theme-plain'
+          vex.dialog.buttons.YES.text = 'Go to website'
+          $(".small, .big").click(function() {
+            message = null
+            url = null
+            switch ($(this).attr('id')) {
+              case "phenotate":
+                message = "The goal of Phenotate build a curated library of accurate, machine-readable disease annotations for differential diagnosis software. Researchers can contribute by annotating diseases using our intuitive software. To grow our library, professors can assign diseases for students to annotate for genetics and medical coursework. (2016 – present)"
+                url = "http://phenotate.org/"
+                break
+              case "aus":
+                message = "This website is based on WordPress and its design has been done from scratch. Its numerous features, such as AUS Calendar, Locker Rental System, AUS Community (an online bulletin board for clubs and services), and more makes it a one-stop shop for Arts students for everything AUS. Lastly, the mobile site is lightweight and designed with touch in mind, with a flat interface common on most mobile platforms. Note: The website has since been redesigned by my successor; an archived copy is available here. (2013 – 2015)"
+                url = "http://yearbooklabs.com/aus/"
+                break
+              case "gradforms":
+                message = "GradForms is a web-based tool for teachers to collect material from students and parents, including assignments, photos, projects, or whatever they need. It was originally designed for use by yearbook committees, but has now since expanded to fit many purposes. (2013 – present)"
+                url = "http://yearbooklabs.com/gradforms/"
+                break
+              case "messenger":
+                message = "GradForms Messenger is an app for Android which lets teachers communicate with students and parents via instant messaging, allowing them to free up their email inbox. Students and parents log into GradForms to check new messages. (2014 – present)"
+                url = "http://yearbooklabs.com/messenger/"
+                break
+              case "meteowear":
+                message = "MeteoWear lets you view the current weather in your location and two other cities of your choice. Plus, get detailed hourly forecasts up to 48 hours from now and daily forecasts for the week ahead. View information on wind, precipitation, pressure, humidity, visibility, dew point, sunrise and sunset times, and moon phase. (2016)"
+                url = "http://yearbooklabs.com/meteowear/"
+                break
+              case "availability":
+                message = "Availability is an app for Android that generates a list of free times based on your calendar, and permits sharing of those free times easily in long form (good for email) or short form (for texting). Most calendars that work with Android’s calendar app are supported. (2015)"
+                url = "http://yearbooklabs.com/availability/"
+                break
+              case "meat":
+                message = "Meat is an extension of Availability, designed for people who want to plan meeting times that work for everyone. It works with your existing calendars and Facebook Messenger. (2015)"
+                url = "http://yearbooklabs.com/meat/"
+                break
+              case "dropcalc":
+                message = "DropCalc is the first calculator for the Android notification drawer. There is a version for simple calculations and another for scientific calculations. Compatible with Android 5.0 and above. (2015)"
+                url = "http://yearbooklabs.com/dropcalc/"
+                break
+              case "mus":
+                message = "Based on the AUS Table Booking System, which I wrote from scratch, the MUS Table Booking System lets student clubs and services book a table in the Bronfman foyer in less than a minute. (2016)"
+                url = "http://mus.mcgill.ca/bookings/"
+                break
+              case "fyc":
+                message = "The first year of undergraduate life can be daunting. The FYC website helps fulfill the mandate of the Council in representing first year students and informing them of news and updates. This site was done in collaboration with fellow student Shant Boodaghians. (2013)"
+                url = "http://ssmu.mcgill.ca/fyc/"
+                break
+              case "mrclancy":
+                message = "Does the Metro (or Modern UI) interface by Microsoft fit well online? By designing the website, following its specifications faithfully, we can see that Metro excels as a web design language. This website hosts curricular resources by Mr. Clancy, my digital media teacher in high school. (2012)"
+                url = "http://mrclancy.ca/"
+                break
+            }
+            vex.dialog.alert({
+                message: message,
+                callback: function (value) {
+                  if (value) {
+                    window.open(url, "_blank")
+                  }
+                }
+            })
+          })
+        </script>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>
