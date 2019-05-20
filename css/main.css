@@ -127,22 +127,26 @@ body {
   margin-bottom: 30px;
 }
 
-.small, .big {
+.small, .medium, .big {
   cursor: pointer;
   margin: 5px;
   transform: scale(1, 1);
   transition: transform 0.25s;
 }
 
-.small:hover, .big:hover {
+.small:hover, .medium:hover, .big:hover {
   transform: scale(1.02, 1.02);
 }
 
-.small:active, .big:active {
+.small:active, .medium:active, .big:active {
   transform:scale(0.98, 0.98);
 }
 
 .small {
+  width: 222px;
+}
+
+.medium {
   width: 300px;
 }
 
@@ -158,6 +162,9 @@ body {
     width: 625px;
   }
   .small {
+    width: 147px;
+  }
+  .medium {
     width: 200px;
   }
   .big {
@@ -172,11 +179,7 @@ body {
   #inner {
     width: calc(100% - 20px);
   }
-  .small {
-    width: calc(100% - 20px);
-    margin-left: 10px;
-  }
-  .big {
+  .small, .medium, .big {
     width: calc(100% - 20px);
     margin-left: 10px;
   }

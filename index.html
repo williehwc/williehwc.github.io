@@ -52,10 +52,10 @@
               </a>
             </div>
             <div class="row">
-              <img src="img/gradforms.png" class="small" id="gradforms" /><img src="img/messenger.png" class="small" id="messenger" /><img src="img/meteowear.png" class="small" id="meteowear" />
+              <img src="img/gradforms.png" class="medium" id="gradforms" /><img src="img/messenger.png" class="medium" id="messenger" /><img src="img/meteowear.png" class="medium" id="meteowear" />
             </div>
             <div class="row">
-              <img src="img/availability.png" class="small" id="availability" /><img src="img/meat.png" class="small" id="meat" /><img src="img/dropcalc.png" class="small" id="dropcalc" />
+              <img src="img/availability.png" class="medium" id="availability" /><img src="img/meat.png" class="medium" id="meat" /><img src="img/dropcalc.png" class="medium" id="dropcalc" />
             </div>
           </div>
 
@@ -67,12 +67,12 @@
               </span>
             </div>
             <div class="row">
-              <img src="img/mus.png" class="small" id="mus" /><img src="img/fyc.png" class="small" id="fyc" /><img src="img/mrclancy.png" class="small" id="mrclancy" />
+              <img src="img/wonderdroid.png" class="small" id="wonderdroid" /><img src="img/mus.png" class="small" id="mus" /><img src="img/fyc.png" class="small" id="fyc" /><img src="img/mrclancy.png" class="small" id="mrclancy" />
             </div>
           </div>
 
           <div id="footer">
-            © williehwc (at) cs (dot) toronto (dot) edu
+            © williehwc (at) cs (dot) princeton (dot) edu
           </div>
         </div>
 
@@ -83,7 +83,7 @@
         <script>
           vex.defaultOptions.className = 'vex-theme-plain'
           vex.dialog.buttons.YES.text = 'Go to website'
-          $(".small, .big").click(function() {
+          $(".small, .medium, .big").click(function() {
             message = null
             url = null
             switch ($(this).attr('id')) {
@@ -118,6 +118,10 @@
               case "dropcalc":
                 message = "DropCalc is the first calculator for the Android notification drawer. There is a version for simple calculations and another for scientific calculations. Compatible with Android 5.0 and above. (2015)"
                 url = "http://yearbooklabs.com/dropcalc/"
+                break
+              case "wonderdroid":
+                message = "Based on WonderDroid, WonderDroid X is an open-source WonderSwan Color (WSC) emulator for Android. It has been downloaded over 20,000 times and is, to my knowledge, the most popular standalone WSC emulator on Android. (2018)"
+                url = "https://play.google.com/store/apps/details?id=com.atelieryl.wonderdroid"
                 break
               case "mus":
                 message = "Based on the AUS Table Booking System, which I wrote from scratch, the MUS Table Booking System lets student clubs and services book a table in the Bronfman foyer in less than a minute. (2016)"
