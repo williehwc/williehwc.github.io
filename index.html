@@ -19,9 +19,9 @@
 
         <div id="outer">
           <div id="inner">
-            <a href="portfolio.pdf" target="_blank">
+            <!-- <a href="portfolio.pdf" target="_blank">
               <img src="img/button.png" id="button" title="Download PDF" />
-            </a>
+            </a> -->
             <div id="name">
               Willie Chang
             </div>
@@ -37,7 +37,7 @@
               </span>
             </div>
             <div class="row">
-              <img src="img/phenotate.png" class="big" id="phenotate" /><img src="img/aus.png" class="big" id="aus" />
+              <img src="img/phenotate.png" class="big" id="phenotate" /><img src="img/p4rtt.png" class="big" id="p4rtt" />
             </div>
           </div>
 
@@ -67,12 +67,12 @@
               </span>
             </div>
             <div class="row">
-              <img src="img/wonderdroid.png" class="small" id="wonderdroid" /><img src="img/mus.png" class="small" id="mus" /><img src="img/fyc.png" class="small" id="fyc" /><img src="img/mrclancy.png" class="small" id="mrclancy" />
+              <img src="img/wonderdroid.png" class="medium" id="wonderdroid" /><img src="img/aus.png" class="medium" id="aus" /><!--<img src="img/mus.png" class="medium" id="mus" /><img src="img/fyc.png" class="medium" id="fyc" />--><img src="img/mrclancy.png" class="medium" id="mrclancy" />
             </div>
           </div>
 
           <div id="footer">
-            © williehwc (at) cs (dot) princeton (dot) edu
+            © whchang (at) cs (dot) princeton (dot) edu
           </div>
         </div>
 
@@ -92,8 +92,8 @@
                 url = "http://phenotate.org/"
                 break
               case "aus":
-                message = "This website is based on WordPress and its design has been done from scratch. Its numerous features, such as AUS Calendar, Locker Rental System, AUS Community (an online bulletin board for clubs and services), and more makes it a one-stop shop for Arts students for everything AUS. Lastly, the mobile site is lightweight and designed with touch in mind, with a flat interface common on most mobile platforms. Note: The website has since been redesigned by my successor; an archived copy is available here. Please WAIT 3-5 SECONDS after clicking the link. (2013 – 2015)"
-                url = "http://yearbooklabs.com/aus/"
+                message = "This website is based on WordPress and its design has been done from scratch. Its numerous features, such as AUS Calendar, Locker Rental System, AUS Community (an online bulletin board for clubs and services), and more makes it a one-stop shop for Arts students for everything AUS. Lastly, the mobile site is lightweight and designed with touch in mind, with a flat interface common on most mobile platforms. Note: The website has since been redesigned by my successor; an archived copy is available here. (2013 – 2015)"
+                url = "https://web.archive.org/web/20140212112526/http://ausmcgill.com/en/"
                 break
               case "gradforms":
                 message = "GradForms is a web-based tool for teachers to collect material from students and parents, including assignments, photos, projects, or whatever they need. It was originally designed for use by yearbook committees, but has now since expanded to fit many purposes. (2013 – 2016)"
@@ -134,6 +134,10 @@
               case "mrclancy":
                 message = "Does the Metro (or Modern UI) interface by Microsoft fit well online? By designing the website, following its specifications faithfully, we can see that Metro excels as a web design language. This website hosts curricular resources by Mr. Clancy, my digital media teacher in high school. (2012)"
                 url = "http://mrclancy.ca/"
+                break
+              case "p4rtt":
+                message = "P4-RTT runs on P4 programmable network switches to passively measure round trip times (RTT). We use a fast, efficient algorithm that has a low memory footprint, collects real-time RTT data at line rate, and does not contribute to network traffic. (2019 – present)"
+                url = "https://p4campus.cs.princeton.edu/p4rtt.html"
                 break
             }
             vex.dialog.alert({
