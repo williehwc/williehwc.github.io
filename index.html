@@ -88,7 +88,7 @@
             url = null
             switch ($(this).attr('id')) {
               case "phenotate":
-                message = "The goal of Phenotate build a curated library of accurate, machine-readable disease annotations for differential diagnosis software. Researchers can contribute by annotating diseases using our intuitive software. To grow our library, professors can assign diseases for students to annotate for genetics and medical coursework. (2016 – present)"
+                message = 'The goal of Phenotate build a curated library of accurate, machine-readable disease annotations for differential diagnosis software. Researchers can contribute by annotating diseases using our intuitive software. To grow our library, professors can assign diseases for students to annotate for genetics and medical coursework. (2016 – present) <a href="https://www.nature.com/articles/s41436-020-0812-7" target="_blank">Read the paper in <i>Genetics in Medicine</i></a>'
                 url = "http://phenotate.org/"
                 break
               case "aus":
@@ -141,7 +141,7 @@
                 break
             }
             vex.dialog.alert({
-                message: message,
+                unsafeMessage: message,
                 callback: function (value) {
                   if (value) {
                     window.open(url, "_blank")
