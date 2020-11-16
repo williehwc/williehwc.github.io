@@ -101,6 +101,10 @@ body {
   font-family: "Trebuchet MS", sans-serif;
 }
 
+li {
+  font-family: "Verdana", sans-serif;
+}
+
 .section {
   margin-bottom: 30px;
 }
