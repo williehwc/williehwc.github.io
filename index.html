@@ -61,6 +61,18 @@
 
           <div class="section">
             <div class="heading">
+              <img src="img/plus.png" class="icon" />
+              <span class="title">
+                Contributed Projects
+              </span>
+            </div>
+            <div class="row">
+              <a href="https://phenotips.com/"><img src="img/phenotips.png" class="medium"/></a><a href="https://www.rareconnect.org/"><img src="img/rareconnect.png" class="medium" /></a><a href="https://www.switchboardaudio.com/"><img src="img/switchboard.png" class="medium" /></a>
+            </div>
+          </div>
+
+          <div class="section">
+            <div class="heading">
               <img src="img/book.png" class="icon" />
               <span class="title">
                 Education
@@ -160,6 +172,8 @@
                 message = 'P4-RTT runs on P4 programmable network switches to passively measure round trip times (RTT). We use a fast, efficient algorithm that has a low memory footprint, collects real-time RTT data at line rate, and does not contribute to network traffic. (2019 – 2020) <a href="https://dl.acm.org/doi/10.1145/3405669.3405823" target="_blank">Read our SPIN \'20 paper at ACM</a>; copy available on Princeton server via our official website.'
                 url = "https://p4campus.cs.princeton.edu/p4rtt.html"
                 break
+              default:
+              	return
             }
             vex.dialog.alert({
                 unsafeMessage: message,
